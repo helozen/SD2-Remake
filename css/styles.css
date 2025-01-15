@@ -1,0 +1,389 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Profile Picture Styling */
+.profile-link {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between the profile picture and the logo */
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    width: 80px; /* Size of the profile picture */
+    height: 80px;
+    border-radius: 50%; /* Makes the picture circular */
+    object-fit: cover; /* Ensures the image fits within the circle without distortion */
+    border: 2px solid white; /* Optional: Add a white border around the image */
+    cursor: pointer; /* Show pointer to indicate it's clickable */
+}
+
+/* Align the profile picture to the left */
+.header-left {
+    top: auto;
+    left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu Button (Right Side of Header) */
+.menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.menu-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Optional: Adjust menu dropdown for aesthetics */
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dropdown ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-dropdown ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu-dropdown ul li:hover {
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #28a745;
+    padding: 35px;
+    color: white;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin-top: -90px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Menu button and dropdown styles */
+.menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 28px;
+    right: 28px;
+}
+
+.menu-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dropdown ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-dropdown ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu-dropdown ul li:hover {
+    background-color: #f4f4f4;
+}
+
+/* Display the dropdown menu when the button is clicked */
+.menu-dropdown.show {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    background-color: f1f1f1;
+    background-size: cover;
+    height: 400px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero form {
+    margin-top: 20px;
+}
+
+.hero input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #218838;
+}
+
+/* Services Section */
+.services {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+}
+
+.service-card button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-card button:hover {
+    background-color: #218838;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 50px;
+    background-color: #fafafa;
+}
+
+.how-it-works h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    text-align: center;
+    width: 30%;
+}
+
+.step img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+}
+
+.step p {
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+blockquote {
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    padding: 50px;
+    background-color: #28a745;
+    color: white;
+}
+
+.call-to-action h2 {
+    margin-bottom: 20px;
+}
+
+.call-to-action button {
+    padding: 15px 30px;
+    background-color: white;
+    color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.call-to-action button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

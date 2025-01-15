@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Local Traders Community</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Local Traders Community</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="user-profile.html" class="active">Profile</a></li>
+                <!-- <li><a href="logout.html">Log Out</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <!-- Profile Header Section -->
+    <section class="profile">
+        <div class="container">
+            <div class="profile-inner">
+                <!-- Profile Picture -->
+                <div class="profile-picture">
+                    <img src="uploads/profile_pictures/default-user.png" alt="Profile Picture">
+                </div>
+                <!-- User Info -->
+                <div class="profile-info">
+                    <h1>John Doe</h1>
+                    <p>Plumber | New York, NY</p>
+                    <p>Member since: January 2023</p>
+                </div>
+                <!-- Call to Action -->
+                <div class="profile-action">
+                    <a href="service.html" class="btn">Book Service</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+        <!-- Profile Content Section -->
+    <section class="profile-content container">
+        <!-- Tabs for About, Services, and Reviews -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('about')">About</button>
+            <button class="tab-btn" onclick="openTab('services')">Services</button>
+            <button class="tab-btn" onclick="openTab('reviews')">Reviews</button>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="tab-content active">
+            <h2>About Me</h2>
+            <p>Hi, I’m John Doe, an experienced plumber with over 10 years in the industry. I specialize in residential and commercial plumbing services, including installations, repairs, and emergency services. My goal is to provide reliable and efficient services to my clients.</p>
+        </div>
+
+        <!-- Services Section -->
+        <div id="services" class="tab-content">
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Pipe Installation & Repair</li>
+                <li>Water Heater Maintenance</li>
+                <li>Emergency Plumbing Services</li>
+            </ul>
+        </div>
+
+        <!-- Reviews Section -->
+        <div id="reviews" class="tab-content">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>"John did an amazing job fixing our plumbing issues. Very professional!" - Jane Doe</p>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="review">
+                <p>"Quick and efficient service. Highly recommend!" - Alex Smith</p>
+                <span>⭐⭐⭐⭐</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Local Traders Community. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/profile.js"></script>
+</body>
+</html>
